@@ -1,0 +1,152 @@
+body {
+    margin: auto;
+    background: rgb(218, 214, 214);
+}
+
+.desk-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 600px;
+    width: 850px;
+    background:url(images/drawing.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 1s;
+}
+
+#desk {
+    position: absolute;
+   top: 32px;
+    left: 28px;
+    width: 94%;
+    height: 89%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-side {
+    width: 50%;
+    height: 100%;
+}
+
+.project-title {
+    text-align: center;
+    background: rgb(248, 246, 246);
+    border: 0.4px solid black;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 10px 10px 0 10px;
+}
+
+.notes {
+    flex-basis: 25%;
+    height: 90px;
+    background: url(images/note.png) no-repeat;
+    background-size: 130%;
+    background-position: center;
+    margin: 6px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    padding: 6px;
+    transition: 0.3s;
+}
+
+p {
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0;
+}
+
+.notes:hover {
+    background: url(images/note_usun.svg) no-repeat;
+    background-size: 130%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.notes-desk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.add-note-form {
+    display: flex;
+    margin: 0 10px;
+    background: rgb(248, 246, 246);
+    border: 0.4px solid black;
+
+}
+
+.textarea-note {
+    width: 70%;
+    resize: none;
+    border: 0.4px solid black;
+    background: rgb(248, 246, 246);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.button-note {
+    width: 30%;
+    border: 0.4px solid black;
+    background: rgb(248, 246, 246);
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+}
+
+.r-side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo {
+    font-family: 'Shadows Into Light', cursive;
+    flex-basis: 43%;
+    font-size: 20px;
+    padding: 6px 12px;
+    display: flex;
+    
+}
+
+.bottomContainer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    margin: 6px 20px;
+}
+
+.bottomContainer button {
+    border: 0.4px solid black;
+    background: rgb(248, 246, 246);
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-delete {
+    width: 20px;
+    height: 20px;
+    background-image: url(images/red-x.png);
+    background-size: cover;
+}
+
+input {
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+textarea {
+    font-family: 'Shadows Into Light', cursive;
+}
